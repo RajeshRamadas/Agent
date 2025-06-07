@@ -3,8 +3,7 @@ requests>=2.31.0
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
 
-# Database
-sqlite3
+# Database (sqlite3 is included with Python standard library)
 
 # Natural Language Processing
 nltk>=3.8
@@ -43,3 +42,5 @@ pydantic>=2.0.0
 
 # Progress tracking
 tqdm>=4.65.0
+
+openai==0.28
