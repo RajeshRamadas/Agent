@@ -1,46 +1,43 @@
-# Core web scraping dependencies
+# === REQUIRED CORE DEPENDENCIES ===
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 lxml>=4.9.0
-
-# Database (sqlite3 is included with Python standard library)
-
-# Natural Language Processing
 nltk>=3.8
 textstat>=0.7.3
-
-# OpenAI API (optional - for premium summarization)
-openai>=1.0.0
-
-# Data manipulation and utilities
-pandas>=2.0.0
-numpy>=1.24.0
-
-# Date and time utilities
-python-dateutil>=2.8.0
-
-# URL parsing
-urllib3>=2.0.0
-
-# Task scheduling (optional)
+python-dotenv>=1.0.0
 schedule>=1.2.0
 
-# Configuration management
-python-dotenv>=1.0.0
+# === OPTIONAL ENHANCED DEPENDENCIES ===
+# Uncomment the ones you want to use:
 
-# Logging
-colorlog>=6.7.0
+# For OpenAI summarization (premium quality)
+# openai>=1.0.0
 
-# HTTP client improvements
-httpx>=0.24.0
+# For data analysis and exports
+# pandas>=2.0.0
+# numpy>=1.24.0
 
-# Text processing
-regex>=2023.0.0
+# For enhanced logging
+# colorlog>=6.7.0
 
-# Data validation
-pydantic>=2.0.0
+# For progress tracking
+# tqdm>=4.65.0
 
-# Progress tracking
-tqdm>=4.65.0
+# === INSTALLATION NOTES ===
+# 1. Install core dependencies:
+#    pip install requests beautifulsoup4 lxml nltk textstat python-dotenv schedule
+#
+# 2. For OpenAI support:
+#    pip install openai
+#
+# 3. For enhanced features:
+#    pip install pandas numpy colorlog tqdm
+#
+# 4. All at once:
+#    pip install -r requirements.txt
 
-openai==0.28
+# === PLATFORM NOTES ===
+# - sqlite3: Built into Python (no installation needed)
+# - urllib3: Comes with requests
+# - pathlib: Built into Python 3.4+
+# - json, re, time, datetime: Built into Python
